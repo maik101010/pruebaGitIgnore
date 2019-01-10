@@ -27,26 +27,26 @@ public class Main {
 //        }else{
 //            System.out.println("Persona no insertada");
 //        }
-        //List<Persona> listaRetornada = personaConsultada.getPersonId(1);
-        String usuario = "juanita";
-        String password = "1234";
-        Persona persona = personaConsultada.getPersonNombreAndPassword(usuario, password);
-
+        List<Persona> listaRetornada = personaConsultada.getAll();
+//        String usuario = "juanita";
+//        String password = "1234";
+//        Persona persona = personaConsultada.getPersonNombreAndPassword(usuario, password);
+        
         //stream
         //listaRetornada.stream().filter(l->l.getNombre().startsWith("O")).forEach(l->System.out.println(l));
         //for (int i = 0; i < listaRetornada i++) {
-        if (persona.getNombre() == null || persona.getContrasenia() == null) {
-            System.out.println("No logueado");
-        }else if (persona.getNombre().equals(usuario) && persona.getContrasenia().equals(password)){
-        
-            System.out.println("Logueado");
-        }
+//        if (persona.getNombre() == null || persona.getContrasenia() == null) {
+//            System.out.println("No logueado");
+//        }else if (persona.getNombre().equals(usuario) && persona.getContrasenia().equals(password)){
+//        
+//            System.out.println("Logueado");
+//        }
 
         //}
-//        
-//        for (Persona persona : listaRetornada) {
-//            System.out.println(persona);
-//        }
+        
+        for (Persona persona : listaRetornada) {
+            System.out.println(persona);
+        }
     }
 
 }
